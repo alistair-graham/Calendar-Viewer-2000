@@ -1,0 +1,24 @@
+@import "../../shared.scss";
+
+.cornerCell {
+  border-right: 1px solid;
+}
+
+.weekday-row {
+  border-bottom: $table-border-size;
+  border-color: $table-border-colour;
+}
+
+.mobile-view {
+  display: none;
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+  .mobile-view {
+    display: block;
+  }
+
+  .desktop-view {
+    display: none;
+  }
+}

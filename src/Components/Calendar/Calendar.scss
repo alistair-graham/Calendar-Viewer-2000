@@ -5,25 +5,12 @@
   flex-direction: column;
 }
 
-.weekTableRow {
+.row {
   display: flex;
-  flex-direction: row;
 }
 
-.weekTableCol {
+.cell {
   flex: 1 1 0;
-}
-
-.mobileView {
-  display: none;
-}
-
-@media screen and (max-width: $mobile-breakpoint) {
-  .mobileView {
-    display: block;
-  }
-
-  .desktopView {
-    display: none;
-  }
+  border-right: $table-border-size;
+  border-color: $table-border-colour;
 }
