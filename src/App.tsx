@@ -31,6 +31,32 @@ function App() {
             </th>
           </tr>
         </thead>
+        <tbody>
+          <tr>
+            <TableRow hour={9} />
+          </tr>
+          <tr>
+            <TableRow hour={10} />
+          </tr>
+          <tr>
+            <TableRow hour={11} />
+          </tr>
+          <tr>
+            <TableRow hour={12} />
+          </tr>
+          <tr>
+            <TableRow hour={1} />
+          </tr>
+          <tr>
+            <TableRow hour={2} />
+          </tr>
+          <tr>
+            <TableRow hour={3} />
+          </tr>
+          <tr>
+            <TableRow hour={4} />
+          </tr>
+        </tbody>
       </table>
     </div>
   );
