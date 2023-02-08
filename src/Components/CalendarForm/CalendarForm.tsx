@@ -1,5 +1,5 @@
 const CalendarForm = () => {
-    return <></>;
+  return <></>;
 };
 
 export default CalendarForm;

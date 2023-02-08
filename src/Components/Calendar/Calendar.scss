@@ -1,8 +1,8 @@
-@import "./shared.scss";
+@import "../../shared.scss";
 
 .weekTable {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .weekTableRow {
@@ -15,15 +15,15 @@
 }
 
 .mobileView {
-    display: none;
+  display: none;
 }
 
 @media screen and (max-width: $mobile-breakpoint) {
-    .mobileView {
-        display: block;
-    }
-    
-    .desktopView {
-        display: none;
-    };
+  .mobileView {
+    display: block;
+  }
+
+  .desktopView {
+    display: none;
+  }
 }
