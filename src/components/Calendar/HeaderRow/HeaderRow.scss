@@ -1,12 +1,18 @@
-@import "../../shared.scss";
+@import "../../../shared.scss";
 
-.cornerCell {
-  border-right: 1px solid;
+.header-cell {
+  display: flex;
+
+  p {
+    margin: auto;
+  }
 }
 
-.weekday-row {
+.header-row {
   border-bottom: $table-border-size;
   border-color: $table-border-colour;
+  color: rgb(75, 75, 75);
+  height: 40px;
 }
 
 .mobile-view {
@@ -20,5 +26,11 @@
 
   .desktop-view {
     display: none;
+  }
+}
+
+@media screen and (max-width: $tablet-breakpoint-small) {
+  .header-row {
+    font-size: 12px;
   }
 }
