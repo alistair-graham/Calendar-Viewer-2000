@@ -1,13 +1,6 @@
 import { createSelector, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { RootState } from "../../app/store";
-
-export enum Day {
-  Monday = "Monday",
-  Tuesday = "Tuesday",
-  Wednesday = "Wednesday",
-  Thursday = "Thursday",
-  Friday = "Friday",
-}
+import { Day } from "../../app/types";
 
 interface IEvent {
   day: Day;
@@ -17,58 +10,12 @@ interface IEvent {
 
 interface IEvents extends Array<IEvent> {}
 
-export interface ICalendarState {
+interface ICalendarState {
   events: IEvents;
 }
 
 const initialState: ICalendarState = {
-  events: [
-    {
-      day: Day.Monday,
-      hour: 9,
-      name: "my event 1my event 1my event 1my event 1ent 1my eventent 1my event 1ent 1my event",
-    },
-    {
-      day: Day.Tuesday,
-      hour: 10,
-      name: "my event 3",
-    },
-    {
-      day: Day.Tuesday,
-      hour: 11,
-      name: "my event 3",
-    },
-    {
-      day: Day.Tuesday,
-      hour: 12,
-      name: "my event 3",
-    },
-    {
-      day: Day.Tuesday,
-      hour: 13,
-      name: "my event 3",
-    },
-    {
-      day: Day.Tuesday,
-      hour: 14,
-      name: "my event 3",
-    },
-    {
-      day: Day.Tuesday,
-      hour: 15,
-      name: "my event 3",
-    },
-    {
-      day: Day.Tuesday,
-      hour: 16,
-      name: "my event 3",
-    },
-    {
-      day: Day.Tuesday,
-      hour: 17,
-      name: "my event 3",
-    },
-  ],
+  events: [],
 };
 
 interface AddEventPayload {
@@ -91,12 +38,12 @@ const calendarSlice = createSlice({
   },
 });
 
-export const selectEvents = (state: RootState) => state.calendar.events;
+const selectEvents = (state: RootState) => state.calendar.events;
 
 // Factory function that will create a memoised selector for each hour's events
 export const makeSelectEventsByHour = () => {
   const selectEventsByHour = createSelector(
-    [selectEvents, (state: RootState, hour: number) => hour],
+    [selectEvents, (_state: RootState, hour: number) => hour],
     (events, hour) => events?.filter((event) => event.hour === hour)
   );
   return selectEventsByHour;
