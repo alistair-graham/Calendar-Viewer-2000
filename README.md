@@ -10,7 +10,7 @@
 
 ## Overview
 A responsive basic calendar that displays the weeks' events. It has a form which can be used to add new events to the calendar.
-This is my answer to a technical test I was given whilst applying for new work. Given more time, it would look a lot different!
+This is my solution to a technical test. Given more time, it would look a lot different!
 
 ## Features
 - Seamlessly responsive with three breakpoints.
