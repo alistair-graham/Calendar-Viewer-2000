@@ -18,6 +18,11 @@
   background-color: lightblue;
   padding: 4px;
   margin: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 @media screen and (max-width: $tablet-breakpoint-large) {
   .hour-row {
     font-size: 12px;

@@ -1,11 +1,11 @@
 import "./App.scss";
-import Calendar from "./components/Calendar/Calendar";
+import CalendarTable from "./components/Calendar/CalendarTable/CalendarTable";
 import CalendarForm from "./components/CalendarForm/CalendarForm";
 
 const App = () => {
   return (
     <>
-      <Calendar />
+      <CalendarTable />
       <CalendarForm />
     </>
   );
