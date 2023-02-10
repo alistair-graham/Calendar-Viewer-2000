@@ -24,15 +24,6 @@ This is my solution to a technical test. Given more time, it would look a lot di
 - The event names are displayed on a single line.
 - There is only one test and it is currently skipped as I haven't added the redux boilerplate to enable component testing.
 
-
-## How to run
-- Clone the repository locally.
-- Run the following commands:
-
-&emsp;`npm install`
-
-&emsp;`npm start`
-
 ## Screenshots
 
 Desktop view
@@ -46,6 +37,14 @@ Tablet view (iPad Air)
 Mobile view (iPhone 12 Pro)
 
 <img width="382" alt="image" src="https://user-images.githubusercontent.com/124267255/218003704-5fd8b603-4bf6-49a7-a649-5306386acf8f.png">
+
+## How to run locally
+- Clone the repository locally.
+- Run the following commands:
+
+&emsp;`npm install`
+
+&emsp;`npm start`
 
 
 
